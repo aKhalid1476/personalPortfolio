@@ -145,3 +145,36 @@ Import trace:
     ./app/page.tsx
 [00:21:14.683] Server  LOG     ✓ Compiled in 11ms
 [00:21:15.720] Server  LOG     ✓ Compiled in 12ms
+[00:30:16.979] Server  LOG     ✓ Compiled in 23ms
+[00:30:19.592] Server  LOG     ✓ Compiled in 22ms
+[00:30:22.579] Server  LOG     ✓ Compiled in 14ms
+[00:30:52.271] Server  LOG     ✓ Compiled in 13ms
+[00:31:01.201] Server  LOG     ✓ Compiled in 12ms
+[00:31:07.818] Server  LOG     ✓ Compiled in 12ms
+[00:31:29.519] Server  LOG     ✓ Compiled in 9ms
+[00:31:35.336] Server  LOG     ✓ Compiled in 14ms
+[00:31:41.893] Server  LOG     ✓ Compiled in 10ms
+[00:32:38.387] Server  LOG     ✓ Compiled in 9ms
+[00:32:39.862] Server  LOG     ✓ Compiled in 10ms
+[00:33:39.401] Server  LOG     ✓ Compiled in 17ms
+[00:33:42.267] Server  LOG     ✓ Compiled in 15ms
+[00:33:45.681] Server  LOG     ✓ Compiled in 12ms
+[00:34:33.518] Server  LOG     ✓ Compiled in 28ms
+[00:34:44.317] Server  LOG     ✓ Compiled in 12ms
+[00:34:48.496] Server  LOG     ✓ Compiled in 12ms
+[01:10:07.762] Server  LOG     ✓ Compiled in 68ms
+[01:10:13.808] Server  LOG     ✓ Compiled in 88ms
+[01:10:22.320] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:10:22.519] Browser WARN    Image with src "/images/avatar.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:10:39.463] Server  LOG     ✓ Compiled in 24ms
+[01:10:58.207] Server  LOG     ✓ Compiled in 23ms
+[01:14:49.720] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:14:49.856] Browser WARN    Image with src "/images/avatar.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:15:40.837] Server  LOG     ✓ Compiled in 82ms
+[01:15:59.675] Server  LOG     ✓ Compiled in 72ms
+[01:24:00.109] Server  LOG     ✓ Compiled in 107ms
+[01:24:31.660] Server  LOG     ✓ Compiled in 0ms
+[01:24:31.907] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:24:32.286] Browser WARN    Image with src "/images/avatar.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:25:07.643] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:25:07.762] Browser WARN    Image with src "/images/avatar.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

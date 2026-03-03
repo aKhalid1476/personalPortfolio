@@ -241,7 +241,7 @@ function Bio() {
                 delay: 0.05,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(B, {
-                        children: "shipped goosetype.com, 5000+ users in one week"
+                        children: "shipped features for Orbital and WARG"
                     }, void 0, false, {
                         fileName: "[project]/components/Bio.tsx",
                         lineNumber: 51,
@@ -252,16 +252,7 @@ function Bio() {
                         lineNumber: 52,
                         columnNumber: 9
                     }, this),
-                    "typing arena, rebranded after Waterloo flagged the original;",
-                    " ",
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(B, {
-                        children: "rebuilt and scaled fast"
-                    }, void 0, false, {
-                        fileName: "[project]/components/Bio.tsx",
-                        lineNumber: 54,
-                        columnNumber: 9
-                    }, this),
-                    "."
+                    "two of the leading design teams at UW."
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Bio.tsx",
@@ -272,47 +263,29 @@ function Bio() {
                 delay: 0.1,
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(B, {
-                        children: "hosted the biggest muslim ethics-based hackathon in north america"
+                        children: "building the next big Muslim startup"
                     }, void 0, false, {
                         fileName: "[project]/components/Bio.tsx",
-                        lineNumber: 58,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Sep, {}, void 0, false, {
                         fileName: "[project]/components/Bio.tsx",
+                        lineNumber: 58,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(B, {
+                        children: "1000+"
+                    }, void 0, false, {
+                        fileName: "[project]/components/Bio.tsx",
                         lineNumber: 59,
                         columnNumber: 9
                     }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(B, {
-                        children: "300+"
-                    }, void 0, false, {
-                        fileName: "[project]/components/Bio.tsx",
-                        lineNumber: 60,
-                        columnNumber: 9
-                    }, this),
-                    " people, sponsored by ",
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(B, {
-                        children: "YC-backed"
-                    }, void 0, false, {
-                        fileName: "[project]/components/Bio.tsx",
-                        lineNumber: 60,
-                        columnNumber: 42
-                    }, this),
-                    " startups,",
-                    " ",
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
-                        className: "not-italic text-white/60",
-                        children: "Shopify"
-                    }, void 0, false, {
-                        fileName: "[project]/components/Bio.tsx",
-                        lineNumber: 61,
-                        columnNumber: 9
-                    }, this),
-                    ", & a16z scout."
+                    " people on waitlist, building with Typescript, AWS, Langchain, OpenAI API."
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Bio.tsx",
-                lineNumber: 57,
+                lineNumber: 56,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Row, {
@@ -322,12 +295,12 @@ function Bio() {
                         children: "certified & experienced"
                     }, void 0, false, {
                         fileName: "[project]/components/Bio.tsx",
-                        lineNumber: 65,
+                        lineNumber: 63,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Sep, {}, void 0, false, {
                         fileName: "[project]/components/Bio.tsx",
-                        lineNumber: 66,
+                        lineNumber: 64,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Tag, {
@@ -335,7 +308,7 @@ function Bio() {
                         children: "aws"
                     }, void 0, false, {
                         fileName: "[project]/components/Bio.tsx",
-                        lineNumber: 67,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, this),
                     " ",
@@ -346,7 +319,7 @@ function Bio() {
                         children: "az"
                     }, void 0, false, {
                         fileName: "[project]/components/Bio.tsx",
-                        lineNumber: 71,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this),
                     " ",
@@ -357,7 +330,7 @@ function Bio() {
                         children: "ccna"
                     }, void 0, false, {
                         fileName: "[project]/components/Bio.tsx",
-                        lineNumber: 75,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, this),
                     " ",
@@ -367,14 +340,14 @@ function Bio() {
                         children: "founding"
                     }, void 0, false, {
                         fileName: "[project]/components/Bio.tsx",
-                        lineNumber: 79,
+                        lineNumber: 77,
                         columnNumber: 9
                     }, this),
                     " backend engineer, swe & cyber intern, cybersecurity specialist."
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Bio.tsx",
-                lineNumber: 64,
+                lineNumber: 62,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(Row, {
@@ -384,7 +357,7 @@ function Bio() {
                         children: "cool facts:"
                     }, void 0, false, {
                         fileName: "[project]/components/Bio.tsx",
-                        lineNumber: 84,
+                        lineNumber: 82,
                         columnNumber: 9
                     }, this),
                     " first internship at 11, 8 million views on my insta,",
@@ -393,7 +366,7 @@ function Bio() {
                 ]
             }, void 0, true, {
                 fileName: "[project]/components/Bio.tsx",
-                lineNumber: 83,
+                lineNumber: 81,
                 columnNumber: 7
             }, this)
         ]

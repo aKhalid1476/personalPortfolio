@@ -13,7 +13,7 @@ function Row({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
       transition={{ duration: 0.35, ease: "easeOut", delay }}
     >
       <span className="text-indigo-400/50 shrink-0 select-none mt-0.5">↳</span>
-      <p className="text-white/75 text-base md:text-lg leading-relaxed">
+      <p className="text-zinc-600 dark:text-white/75 text-base md:text-lg leading-relaxed">
         {children}
       </p>
     </motion.div>
@@ -21,17 +21,17 @@ function Row({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
 }
 
 function Sep() {
-  return <span className="text-white/25 mx-1.5">→</span>;
+  return <span className="text-zinc-400 dark:text-white/25 mx-1.5">→</span>;
 }
 
 function B({ children }: { children: ReactNode }) {
-  return <strong className="text-white font-semibold">{children}</strong>;
+  return <strong className="text-zinc-900 dark:text-white font-semibold">{children}</strong>;
 }
 
 function Tag({ children, accent }: { children: ReactNode; accent?: string }) {
   return (
     <span
-      className={`inline-flex items-center text-xs font-mono px-1.5 py-0.5 rounded border mx-0.5 ${accent ?? "border-white/15 text-white/50 bg-white/5"}`}
+      className={`inline-flex items-center text-xs font-mono px-1.5 py-0.5 rounded border mx-0.5 ${accent ?? "border-zinc-300 text-zinc-500 bg-zinc-100 dark:border-white/15 dark:text-white/50 dark:bg-white/5"}`}
     >
       {children}
     </span>
@@ -48,17 +48,15 @@ export function Bio() {
       </Row>
 
       <Row delay={0.05}>
-        <B>shipped goosetype.com, 5000+ users in one week</B>
+        <B>shipped features for Orbital and WARG</B>
         <Sep />
-        typing arena, rebranded after Waterloo flagged the original;{" "}
-        <B>rebuilt and scaled fast</B>.
+        two of the leading design teams at UW.
       </Row>
 
       <Row delay={0.1}>
-        <B>hosted the biggest muslim ethics-based hackathon in north america</B>
+        <B>building the next big Muslim startup</B>
         <Sep />
-        <B>300+</B> people, sponsored by <B>YC-backed</B> startups,{" "}
-        <em className="not-italic text-white/60">Shopify</em>, &amp; a16z scout.
+        <B>1000+</B> people on waitlist, building with Typescript, AWS, Langchain, OpenAI API.
       </Row>
 
       <Row delay={0.15}>

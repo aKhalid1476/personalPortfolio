@@ -31,21 +31,21 @@ export function Hero() {
         {/* Name + hover hint */}
         <div className="flex flex-col gap-1">
           <div className="flex items-baseline gap-3 flex-wrap">
-            <h1 className="font-serif text-6xl md:text-7xl tracking-tight text-white leading-none">
+            <h1 className="font-serif text-6xl md:text-7xl tracking-tight text-zinc-900 dark:text-white leading-none">
               abdullah khalid
             </h1>
             <motion.span
               animate={{ opacity: hovered ? 0 : 1 }}
               transition={{ duration: 0.25 }}
-              className="text-sm text-white/30 whitespace-nowrap"
+              className="text-sm text-zinc-400 dark:text-white/30 whitespace-nowrap"
             >
               hover here ←
             </motion.span>
           </div>
 
           {/* Descriptor */}
-          <p className="text-base md:text-lg text-white/50 leading-relaxed">
-            software engineering @ uwaterloo 
+          <p className="text-base md:text-lg text-zinc-500 dark:text-white/50 leading-relaxed">
+            software engineering @ uwaterloo
           </p>
         </div>
       </div>
