@@ -25,7 +25,7 @@ export function Navbar() {
             href="#"
             className="text-[0.8rem] tracking-wide text-zinc-500 dark:text-white/55 hover:text-zinc-900 dark:hover:text-white/90 transition-colors duration-200"
           >
-            Resume
+            Experience
           </a>
           <a
             href="#contact"

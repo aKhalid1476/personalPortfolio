@@ -196,7 +196,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ParticleNetwor
 ;
 ;
 const metadata = {
-    title: "Muhib Waqar",
+    title: "Abdullah Khalid",
     description: "math & business @ uwaterloo · swe · security · product management"
 };
 function RootLayout({ children }) {

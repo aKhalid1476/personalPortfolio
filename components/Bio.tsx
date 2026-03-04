@@ -56,31 +56,17 @@ export function Bio() {
       <Row delay={0.1}>
         <B>building the next big Muslim startup</B>
         <Sep />
-        <B>1000+</B> people on waitlist, building with Typescript, AWS, Langchain, OpenAI API.
+        building with Typescript, AWS, Langchain, OpenAI API.
       </Row>
 
       <Row delay={0.15}>
-        <B>certified &amp; experienced</B>
+        <B>Experience</B>
         <Sep />
-        <Tag accent="border-orange-400/25 text-orange-300/80 bg-orange-400/5">
-          aws
-        </Tag>{" "}
-        aws ccp,{" "}
-        <Tag accent="border-blue-400/25 text-blue-300/80 bg-blue-400/5">
-          az
-        </Tag>{" "}
-        az-900,{" "}
-        <Tag accent="border-cyan-400/25 text-cyan-300/80 bg-cyan-400/5">
-          ccna
-        </Tag>{" "}
-        ccna1 + more.{" "}
-        <B>founding</B> backend engineer, swe &amp; cyber intern, cybersecurity
-        specialist.
+        technical co-founder, swe, autonomous dev, mle.
       </Row>
 
       <Row delay={0.2}>
-        <B>cool facts:</B> first internship at 11, 8 million views on my insta,{" "}
-        4th place toronto wrestling.
+        <B>cool facts:</B> TODO.
       </Row>
     </section>
   );

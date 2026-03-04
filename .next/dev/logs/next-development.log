@@ -178,3 +178,63 @@ Import trace:
 [01:24:32.286] Browser WARN    Image with src "/images/avatar.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
 [01:25:07.643] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [01:25:07.762] Browser WARN    Image with src "/images/avatar.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:48:32.195] Server  LOG     ✓ Compiled in 9ms
+[03:02:18.641] Server  LOG     ✓ Compiled in 37ms
+[03:02:45.046] Server  LOG     ✓ Compiled in 26ms
+[03:02:47.876] Server  LOG     ✓ Compiled in 20ms
+[03:02:52.216] Server  LOG     ✓ Compiled in 11ms
+[03:02:58.110] Server  LOG     ✓ Compiled in 17ms
+[03:02:59.770] Server  LOG     ✓ Compiled in 17ms
+[03:03:03.561] Server  LOG     ✓ Compiled in 20ms
+[03:03:06.361] Server  LOG     ✓ Compiled in 17ms
+[03:03:14.254] Server  LOG     ✓ Compiled in 15ms
+[03:04:20.660] Server  LOG     ✓ Compiled in 98ms
+[03:05:06.255] Server  LOG     ✓ Compiled in 12ms
+[03:05:11.779] Server  LOG     ✓ Compiled in 16ms
+[03:05:11.887] Browser ERROR   ./components/Bio.tsx:66:13
+Parsing ecmascript source code failed
+  64 |         <Sep />
+  65 |         <B>technical co-founder, swe, autonomous dev, mle.
+> 66 |       </Row>
+     |             ^
+> 67 |
+     | ^
+> 68 |       <Row delay={0.2}>
+     | ^^^^^^^
+  69 |         <B>cool facts:</B> TODO.
+  70 |       </Row>
+  71 |     </section>
+
+Expected '</', got 'jsx text'
+
+Import trace:
+  Server Component:
+    ./components/Bio.tsx
+    ./app/page.tsx
+[03:05:17.513] Server  LOG     ✓ Compiled in 12ms
+[03:08:47.064] Server  LOG     ✓ Compiled in 20ms
+[03:08:59.802] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:09:00.076] Browser WARN    Image with src "/images/avatar.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:14:45.134] Server  LOG     ✓ Compiled in 59ms
+[03:14:46.945] Server  LOG     ✓ Compiled in 26ms
+[03:21:33.229] Server  LOG     ✓ Compiled in 33ms
+[03:21:39.575] Server  LOG     ✓ Compiled in 17ms
+[03:21:42.929] Server  LOG     ✓ Compiled in 23ms
+[04:06:11.880] Server  LOG     ✓ Compiled in 108ms
+[04:08:25.184] Server  LOG     ✓ Compiled in 77ms
+[04:08:36.719] Server  LOG     ✓ Compiled in 49ms
+[06:49:29.038] Server  LOG     ✓ Compiled in 105ms
+[06:49:30.186] Server  LOG     ✓ Compiled in 11ms
+[06:49:59.388] Server  LOG     ✓ Compiled in 64ms
+[06:50:09.931] Server  LOG     ✓ Compiled in 20ms
+[06:50:14.850] Server  LOG     ✓ Compiled in 14ms
+[06:50:28.526] Server  LOG     ✓ Compiled in 32ms
+[06:50:32.666] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:50:32.945] Browser WARN    Image with src "/images/avatar.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:51:46.521] Server  LOG     ✓ Compiled in 43ms
+[06:51:48.940] Server  LOG     ✓ Compiled in 14ms
+[06:51:55.958] Server  LOG     ✓ Compiled in 21ms
+[06:51:57.770] Server  LOG     ✓ Compiled in 13ms
+[06:52:00.589] Server  LOG     ✓ Compiled in 22ms
+[06:52:08.678] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:52:08.922] Browser WARN    Image with src "/images/avatar.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.

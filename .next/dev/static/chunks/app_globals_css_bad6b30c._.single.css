@@ -460,6 +460,10 @@
     margin-top: calc(var(--spacing) * .5);
   }
 
+  .mt-2 {
+    margin-top: calc(var(--spacing) * 2);
+  }
+
   .mt-14 {
     margin-top: calc(var(--spacing) * 14);
   }
@@ -480,8 +484,16 @@
     height: calc(var(--spacing) * 4);
   }
 
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
+
   .min-h-screen {
     min-height: 100vh;
+  }
+
+  .w-8 {
+    width: calc(var(--spacing) * 8);
   }
 
   .w-full {
@@ -576,6 +588,10 @@
     border-radius: var(--radius-2xl);
   }
 
+  .rounded-full {
+    border-radius: 3.40282e38px;
+  }
+
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
@@ -637,6 +653,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .border-white\/15 {
       border-color: color-mix(in oklab, var(--color-white) 15%, transparent);
+    }
+  }
+
+  .border-white\/20 {
+    border-color: #fff3;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .border-white\/20 {
+      border-color: color-mix(in oklab, var(--color-white) 20%, transparent);
     }
   }
 
@@ -714,6 +740,16 @@
     }
   }
 
+  .bg-white\/8 {
+    background-color: #ffffff14;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-white\/8 {
+      background-color: color-mix(in oklab, var(--color-white) 8%, transparent);
+    }
+  }
+
   .bg-white\/15 {
     background-color: #ffffff26;
   }
@@ -731,6 +767,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .bg-white\/70 {
       background-color: color-mix(in oklab, var(--color-white) 70%, transparent);
+    }
+  }
+
+  .bg-white\/\[0\.08\] {
+    background-color: #ffffff14;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .bg-white\/\[0\.08\] {
+      background-color: color-mix(in oklab, var(--color-white) 8%, transparent);
     }
   }
 
@@ -811,6 +857,10 @@
     padding-inline: calc(var(--spacing) * 1.5);
   }
 
+  .px-4 {
+    padding-inline: calc(var(--spacing) * 4);
+  }
+
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
@@ -821,6 +871,10 @@
 
   .py-0\.5 {
     padding-block: calc(var(--spacing) * .5);
+  }
+
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
   }
 
   .py-3\.5 {
@@ -1010,6 +1064,16 @@
     }
   }
 
+  .text-white\/60 {
+    color: #fff9;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-white\/60 {
+      color: color-mix(in oklab, var(--color-white) 60%, transparent);
+    }
+  }
+
   .text-white\/70 {
     color: #ffffffb3;
   }
@@ -1027,6 +1091,16 @@
   @supports (color: color-mix(in lab, red, red)) {
     .text-white\/75 {
       color: color-mix(in oklab, var(--color-white) 75%, transparent);
+    }
+  }
+
+  .text-white\/80 {
+    color: #fffc;
+  }
+
+  @supports (color: color-mix(in lab, red, red)) {
+    .text-white\/80 {
+      color: color-mix(in oklab, var(--color-white) 80%, transparent);
     }
   }
 
@@ -1147,9 +1221,58 @@
   }
 
   @media (hover: hover) {
+    .hover\:-translate-y-0\.5:hover {
+      --tw-translate-y: calc(var(--spacing) * -.5);
+      translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+
+  @media (hover: hover) {
     .hover\:-translate-y-1:hover {
       --tw-translate-y: calc(var(--spacing) * -1);
       translate: var(--tw-translate-x) var(--tw-translate-y);
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-white\/10:hover {
+      background-color: #ffffff1a;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/10:hover {
+        background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-white\/15:hover {
+      background-color: #ffffff26;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/15:hover {
+        background-color: color-mix(in oklab, var(--color-white) 15%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:bg-white\/\[0\.14\]:hover {
+      background-color: #ffffff24;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .hover\:bg-white\/\[0\.14\]:hover {
+        background-color: color-mix(in oklab, var(--color-white) 14.0%, transparent);
+      }
+    }
+  }
+
+  @media (hover: hover) {
+    .hover\:text-white:hover {
+      color: var(--color-white);
     }
   }
 

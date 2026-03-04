@@ -16,7 +16,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Muhib Waqar",
+  title: "Abdullah Khalid",
   description: "math & business @ uwaterloo · swe · security · product management",
 };
 
