@@ -238,3 +238,52 @@ Import trace:
 [06:52:00.589] Server  LOG     ✓ Compiled in 22ms
 [06:52:08.678] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
 [06:52:08.922] Browser WARN    Image with src "/images/avatar.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:10:44.875] Server  LOG     ✓ Compiled in 117ms
+[07:10:54.924] Server  LOG     ✓ Compiled in 147ms
+[07:11:02.156] Server  LOG     ✓ Compiled in 15ms
+[07:11:35.915] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:13:39.509] Server  LOG     ✓ Compiled in 43ms
+[07:13:44.548] Server  LOG     ✓ Compiled in 30ms
+[07:13:54.058] Server  LOG     ✓ Compiled in 13ms
+[07:14:04.801] Server  LOG     ✓ Compiled in 18ms
+[07:14:08.257] Server  LOG     ✓ Compiled in 17ms
+[07:14:10.747] Server  LOG     ✓ Compiled in 16ms
+[07:14:12.759] Server  LOG     ✓ Compiled in 13ms
+[07:14:37.429] Server  LOG     ✓ Compiled in 34ms
+[07:14:56.092] Server  LOG     ✓ Compiled in 14ms
+[07:15:01.961] Server  LOG     ✓ Compiled in 12ms
+[07:15:11.318] Server  LOG     ✓ Compiled in 14ms
+[07:15:19.790] Server  LOG     ✓ Compiled in 12ms
+[07:15:24.460] Server  LOG     ✓ Compiled in 14ms
+[07:16:47.165] Server  LOG     ✓ Compiled in 18ms
+[07:16:57.137] Server  LOG     ✓ Compiled in 15ms
+[07:17:01.421] Server  LOG     ✓ Compiled in 17ms
+[07:17:08.101] Server  LOG     ✓ Compiled in 13ms
+[07:17:09.949] Server  LOG     ✓ Compiled in 13ms
+[07:17:13.375] Server  LOG     ✓ Compiled in 16ms
+[07:17:15.375] Server  LOG     ✓ Compiled in 13ms
+[07:17:17.126] Server  LOG     ✓ Compiled in 14ms
+[07:17:35.896] Server  LOG     ✓ Compiled in 18ms
+[07:17:37.239] Server  LOG     ✓ Compiled in 14ms
+[07:17:38.500] Server  LOG     ✓ Compiled in 12ms
+[07:18:32.790] Server  LOG     ✓ Compiled in 49ms
+[07:18:36.098] Server  LOG     ✓ Compiled in 15ms
+[07:18:37.279] Server  LOG     ✓ Compiled in 16ms
+[07:20:39.030] Server  LOG     ✓ Compiled in 109ms
+[07:21:17.514] Server  LOG     ✓ Compiled in 30ms
+[07:21:35.338] Server  LOG     ✓ Compiled in 15ms
+[07:21:54.647] Server  LOG     ✓ Compiled in 15ms
+[07:21:56.532] Server  LOG     ✓ Compiled in 14ms
+[07:22:05.684] Server  LOG     ✓ Compiled in 21ms
+[07:22:25.618] Server  LOG     ✓ Compiled in 19ms
+[07:22:32.629] Server  LOG     ✓ Compiled in 14ms
+[07:22:34.068] Server  LOG     ✓ Compiled in 16ms
+[07:22:38.135] Server  LOG     ✓ Compiled in 18ms
+[07:22:42.541] Server  LOG     ✓ Compiled in 16ms
+[07:22:54.480] Server  LOG     ✓ Compiled in 16ms
+[07:23:02.774] Browser ERROR   unhandledRejection: NotSupportedError: The element has no supported sources.
+[07:23:05.952] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:34:45.152] Server  LOG     ✓ Compiled in 35ms
+[07:35:00.807] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:35:02.269] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:35:02.377] Browser WARN    Image with src "/images/avatar.jpg" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
