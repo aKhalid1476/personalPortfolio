@@ -275,6 +275,68 @@ It does not compromise minimalism.
 
 ---
 
+# Light / Dark Mode Styling
+
+This site supports both dark and light themes via a `dark` class on `<html>`. Tailwind's `dark:` variant controls dark mode styles.
+
+## Core Rule
+
+**Never use bare `white/*` opacity utilities without a light mode counterpart.** Always pair them with explicit light mode classes.
+
+## Token Pairs
+
+Use these paired patterns consistently across all components:
+
+### Backgrounds
+| Purpose | Light | Dark |
+|---|---|---|
+| Primary bg | `from-zinc-50 via-neutral-100 to-white` | `dark:from-zinc-900 dark:via-neutral-900 dark:to-black` |
+| Card / surface | `bg-white/70` | `dark:bg-zinc-800/40` |
+| Subtle fill | `bg-zinc-100` | `dark:bg-white/[0.08]` |
+| Input / tag bg | `bg-zinc-100` | `dark:bg-white/5` |
+| Icon button hover | `hover:bg-zinc-100` | `dark:hover:bg-white/10` |
+
+### Borders
+| Purpose | Light | Dark |
+|---|---|---|
+| Default border | `border-zinc-200/70` | `dark:border-white/[0.08]` |
+| Subtle border | `border-zinc-300` | `dark:border-white/15` |
+| Separator | `bg-zinc-300` | `dark:bg-white/15` |
+
+### Text
+| Purpose | Light | Dark |
+|---|---|---|
+| Primary | `text-zinc-900` | `dark:text-white` |
+| Secondary | `text-zinc-600` | `dark:text-white/75` |
+| Muted | `text-zinc-500` | `dark:text-white/55` |
+| Very muted | `text-zinc-400` | `dark:text-white/40` |
+| Icon / decorative | `text-zinc-500` | `dark:text-white/60` |
+
+### Interactive elements (buttons, links, icon buttons)
+```
+// Pill / ghost button
+text-zinc-700 bg-zinc-100 border border-zinc-300 hover:bg-zinc-200 hover:text-zinc-900
+dark:text-white/90 dark:bg-white/8 dark:border-white/20 dark:hover:bg-white/[0.14] dark:hover:text-white
+
+// Icon button (circular)
+border border-zinc-300 text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900
+dark:border-white/20 dark:text-white/60 dark:hover:bg-white/10 dark:hover:text-white
+
+// Primary CTA (filled)
+bg-zinc-900 text-white hover:bg-zinc-700
+dark:bg-white dark:text-zinc-900 dark:hover:bg-white/90
+```
+
+## Rules
+
+1. **Never write `text-white` or `bg-white/*` without a light mode class** — they are invisible on a light background.
+2. **Never write `border-white/*` without a light mode class** — borders disappear.
+3. Always write light styles first, then override with `dark:` — this matches Tailwind convention.
+4. The particle network canvas is already theme-aware (uses `rgb(20,20,30)` in light mode).
+5. Navbar, ProjectsShowcase, Bio, and Hero all follow the paired token system above.
+
+---
+
 # What This Site Is NOT
 
 - Not a resume clone

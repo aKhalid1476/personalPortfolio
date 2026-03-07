@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 interface Project {
   id: string;
@@ -21,7 +21,7 @@ const projects: Project[] = [
     tags: ["Langchain", "AWS", "OpenAI API"],
     demoUrl: "#",
     githubUrl: "#",
-    videoSrc: "/videos/hadi-ai.mp4",
+    videoSrc: "/videos/hadiDemo.mp4",
   },
   {
     id: "exoplanet-detector",
@@ -57,29 +57,10 @@ const projects: Project[] = [
 
 export function ProjectsShowcase() {
   const [activeId, setActiveId] = useState(projects[0].id);
-  const [isPlaying, setIsPlaying] = useState(false);
-  const videoRef = useRef<HTMLVideoElement>(null);
-
   const active = projects.find((p) => p.id === activeId)!;
 
   function handleTabChange(id: string) {
     setActiveId(id);
-    setIsPlaying(false);
-    if (videoRef.current) {
-      videoRef.current.pause();
-      videoRef.current.currentTime = 0;
-    }
-  }
-
-  function handlePlayToggle() {
-    if (!videoRef.current) return;
-    if (isPlaying) {
-      videoRef.current.pause();
-      setIsPlaying(false);
-    } else {
-      videoRef.current.play();
-      setIsPlaying(true);
-    }
   }
 
   return (
@@ -109,43 +90,17 @@ export function ProjectsShowcase() {
         {/* Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           {/* Video player */}
-          <div
-            className="relative rounded-xl overflow-hidden bg-zinc-200/60 dark:bg-zinc-900/60 aspect-video cursor-pointer group"
-            onClick={handlePlayToggle}
-          >
+          <div className="relative rounded-xl overflow-hidden bg-zinc-200/60 dark:bg-zinc-900/60 aspect-video">
             <video
-              ref={videoRef}
               key={active.videoSrc}
               src={active.videoSrc}
               className="w-full h-full object-cover"
-              onEnded={() => setIsPlaying(false)}
               preload="metadata"
               playsInline
+              autoPlay
+              muted
+              loop
             />
-
-            {/* Play button overlay */}
-            {!isPlaying && (
-              <div className="absolute inset-0 flex items-center justify-center bg-black/10 dark:bg-black/20 group-hover:bg-black/20 dark:group-hover:bg-black/30 transition-colors duration-200">
-                <div className="w-14 h-14 rounded-full bg-black/10 dark:bg-white/15 backdrop-blur-sm border border-black/15 dark:border-white/20 flex items-center justify-center group-hover:scale-105 transition-transform duration-200">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="ml-1 text-zinc-800 dark:text-white"
-                  >
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-            )}
-
-            {/* Browser chrome bar */}
-            <div className="absolute top-0 left-0 right-0 h-8 bg-zinc-200/80 dark:bg-zinc-800/70 flex items-center px-3 gap-1.5">
-              <div className="w-2 h-2 rounded-full bg-zinc-400/50 dark:bg-white/20" />
-              <div className="w-2 h-2 rounded-full bg-zinc-400/50 dark:bg-white/20" />
-              <div className="w-2 h-2 rounded-full bg-zinc-400/50 dark:bg-white/20" />
-            </div>
           </div>
 
           {/* Project info */}
