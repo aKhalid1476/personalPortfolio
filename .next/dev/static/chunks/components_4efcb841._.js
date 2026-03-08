@@ -87,7 +87,7 @@ function Hero() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     href: "/resumeSWE.pdf",
                                     download: true,
-                                    className: "px-4 py-1.5 text-sm text-white/90 bg-white/[0.08] border border-white/20 rounded-full hover:bg-white/[0.14] hover:text-white transition-all duration-300 ease-out",
+                                    className: "px-4 py-1.5 text-sm text-zinc-700 bg-zinc-100 border border-zinc-300 rounded-full hover:bg-zinc-200 hover:text-zinc-900 dark:text-white/90 dark:bg-white/8 dark:border-white/20 dark:hover:bg-white/[0.14] dark:hover:text-white transition-all duration-300 ease-out",
                                     children: "résumé"
                                 }, void 0, false, {
                                     fileName: "[project]/components/Hero.tsx",
@@ -99,7 +99,7 @@ function Hero() {
                                     target: "_blank",
                                     rel: "noopener noreferrer",
                                     "aria-label": "GitHub",
-                                    className: "w-8 h-8 flex items-center justify-center rounded-full border border-white/20 text-white/60 hover:bg-white/10 hover:text-white transition-all duration-300 ease-out hover:-translate-y-0.5",
+                                    className: "w-8 h-8 flex items-center justify-center rounded-full border border-zinc-300 text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 dark:border-white/20 dark:text-white/60 dark:hover:bg-white/10 dark:hover:text-white transition-all duration-300 ease-out hover:-translate-y-0.5",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                         width: "15",
                                         height: "15",
@@ -127,7 +127,7 @@ function Hero() {
                                     target: "_blank",
                                     rel: "noopener noreferrer",
                                     "aria-label": "X",
-                                    className: "w-8 h-8 flex items-center justify-center rounded-full border border-white/20 text-white/60 hover:bg-white/10 hover:text-white transition-all duration-300 ease-out hover:-translate-y-0.5",
+                                    className: "w-8 h-8 flex items-center justify-center rounded-full border border-zinc-300 text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 dark:border-white/20 dark:text-white/60 dark:hover:bg-white/10 dark:hover:text-white transition-all duration-300 ease-out hover:-translate-y-0.5",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                         width: "14",
                                         height: "14",
@@ -153,7 +153,7 @@ function Hero() {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     href: "mailto:a36khali@uwaterloo.ca",
                                     "aria-label": "Email",
-                                    className: "w-8 h-8 flex items-center justify-center rounded-full border border-white/20 text-white/60 hover:bg-white/10 hover:text-white transition-all duration-300 ease-out hover:-translate-y-0.5",
+                                    className: "w-8 h-8 flex items-center justify-center rounded-full border border-zinc-300 text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 dark:border-white/20 dark:text-white/60 dark:hover:bg-white/10 dark:hover:text-white transition-all duration-300 ease-out hover:-translate-y-0.5",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                         width: "15",
                                         height: "15",
@@ -198,7 +198,7 @@ function Hero() {
                                     target: "_blank",
                                     rel: "noopener noreferrer",
                                     "aria-label": "LinkedIn",
-                                    className: "w-8 h-8 flex items-center justify-center rounded-full border border-white/20 text-white/60 hover:bg-white/10 hover:text-white transition-all duration-300 ease-out hover:-translate-y-0.5",
+                                    className: "w-8 h-8 flex items-center justify-center rounded-full border border-zinc-300 text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 dark:border-white/20 dark:text-white/60 dark:hover:bg-white/10 dark:hover:text-white transition-all duration-300 ease-out hover:-translate-y-0.5",
                                     children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
                                         width: "14",
                                         height: "14",
@@ -362,13 +362,13 @@ function Bio() {
                         lineNumber: 46,
                         columnNumber: 9
                     }, this),
-                    "high intensity program, but has the most ",
+                    "high intensity program, but has the ",
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(B, {
-                        children: "cracked engineers"
+                        children: "best"
                     }, void 0, false, {
                         fileName: "[project]/components/Bio.tsx",
                         lineNumber: 47,
-                        columnNumber: 50
+                        columnNumber: 45
                     }, this),
                     " in the world."
                 ]

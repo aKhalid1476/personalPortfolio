@@ -44,7 +44,7 @@ export function Bio() {
       <Row delay={0}>
         <B>software engineering at the university of waterloo</B>
         <Sep />
-        high intensity program, but has the most <B>cracked engineers</B> in the world.
+        high intensity program, but has the <B>best</B> in the world.
       </Row>
 
       <Row delay={0.05}>

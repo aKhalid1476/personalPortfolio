@@ -34,14 +34,14 @@ const projects: Project[] = [
     videoSrc: "/videos/exoplanet-detector.mp4",
   },
   {
-    id: "telemetry-hq",
-    name: "Telemetry HQ",
+    id: "beaver-trails",
+    name: "Beaver Trails",
     description:
       "End-to-end encrypted note-taking platform with zero-knowledge architecture. Your data stays yours — always.",
-    tags: ["React.js", "FastAPI", "PostgreSQL"],
+    tags: ["Mapbox", "Eleven", "Auth0", "Web-XR"],
     demoUrl: "#",
     githubUrl: "#",
-    videoSrc: "/videos/telemetry-hq.mp4",
+    videoSrc: "/videos/beaver3.mp4",
   },
   {
     id: "tensorrt-benchlab",

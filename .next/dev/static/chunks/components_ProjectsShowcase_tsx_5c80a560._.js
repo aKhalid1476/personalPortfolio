@@ -24,7 +24,7 @@ const projects = [
         ],
         demoUrl: "#",
         githubUrl: "#",
-        videoSrc: "/videos/hadi-ai.mp4"
+        videoSrc: "/videos/hadiDemo.mp4"
     },
     {
         id: "exoplanet-detector",
@@ -40,17 +40,18 @@ const projects = [
         videoSrc: "/videos/exoplanet-detector.mp4"
     },
     {
-        id: "telemetry-hq",
-        name: "Telemetry HQ",
+        id: "beaver-trails",
+        name: "Beaver Trails",
         description: "End-to-end encrypted note-taking platform with zero-knowledge architecture. Your data stays yours — always.",
         tags: [
-            "React.js",
-            "FastAPI",
-            "PostgreSQL"
+            "Mapbox",
+            "Eleven",
+            "Auth0",
+            "Web-XR"
         ],
         demoUrl: "#",
         githubUrl: "#",
-        videoSrc: "/videos/telemetry-hq.mp4"
+        videoSrc: "/videos/beaver3.mp4"
     },
     {
         id: "tensorrt-benchlab",
@@ -69,26 +70,9 @@ const projects = [
 function ProjectsShowcase() {
     _s();
     const [activeId, setActiveId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(projects[0].id);
-    const [isPlaying, setIsPlaying] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
-    const videoRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
     const active = projects.find((p)=>p.id === activeId);
     function handleTabChange(id) {
         setActiveId(id);
-        setIsPlaying(false);
-        if (videoRef.current) {
-            videoRef.current.pause();
-            videoRef.current.currentTime = 0;
-        }
-    }
-    function handlePlayToggle() {
-        if (!videoRef.current) return;
-        if (isPlaying) {
-            videoRef.current.pause();
-            setIsPlaying(false);
-        } else {
-            videoRef.current.play();
-            setIsPlaying(true);
-        }
     }
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
         className: "w-full max-w-4xl mx-auto",
@@ -106,105 +90,41 @@ function ProjectsShowcase() {
                                     className: "absolute bottom-0 left-0 right-0 h-px bg-zinc-900 dark:bg-white"
                                 }, void 0, false, {
                                     fileName: "[project]/components/ProjectsShowcase.tsx",
-                                    lineNumber: 103,
+                                    lineNumber: 84,
                                     columnNumber: 17
                                 }, this)
                             ]
                         }, project.id, true, {
                             fileName: "[project]/components/ProjectsShowcase.tsx",
-                            lineNumber: 92,
+                            lineNumber: 73,
                             columnNumber: 13
                         }, this))
                 }, void 0, false, {
                     fileName: "[project]/components/ProjectsShowcase.tsx",
-                    lineNumber: 90,
+                    lineNumber: 71,
                     columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "grid grid-cols-1 md:grid-cols-2 gap-8 items-center",
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "relative rounded-xl overflow-hidden bg-zinc-200/60 dark:bg-zinc-900/60 aspect-video cursor-pointer group",
-                            onClick: handlePlayToggle,
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
-                                    ref: videoRef,
-                                    src: active.videoSrc,
-                                    className: "w-full h-full object-cover",
-                                    onEnded: ()=>setIsPlaying(false),
-                                    preload: "metadata",
-                                    playsInline: true
-                                }, active.videoSrc, false, {
-                                    fileName: "[project]/components/ProjectsShowcase.tsx",
-                                    lineNumber: 116,
-                                    columnNumber: 13
-                                }, this),
-                                !isPlaying && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute inset-0 flex items-center justify-center bg-black/10 dark:bg-black/20 group-hover:bg-black/20 dark:group-hover:bg-black/30 transition-colors duration-200",
-                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-14 h-14 rounded-full bg-black/10 dark:bg-white/15 backdrop-blur-sm border border-black/15 dark:border-white/20 flex items-center justify-center group-hover:scale-105 transition-transform duration-200",
-                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
-                                            width: "20",
-                                            height: "20",
-                                            viewBox: "0 0 24 24",
-                                            fill: "currentColor",
-                                            className: "ml-1 text-zinc-800 dark:text-white",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
-                                                d: "M8 5v14l11-7z"
-                                            }, void 0, false, {
-                                                fileName: "[project]/components/ProjectsShowcase.tsx",
-                                                lineNumber: 137,
-                                                columnNumber: 21
-                                            }, this)
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ProjectsShowcase.tsx",
-                                            lineNumber: 130,
-                                            columnNumber: 19
-                                        }, this)
-                                    }, void 0, false, {
-                                        fileName: "[project]/components/ProjectsShowcase.tsx",
-                                        lineNumber: 129,
-                                        columnNumber: 17
-                                    }, this)
-                                }, void 0, false, {
-                                    fileName: "[project]/components/ProjectsShowcase.tsx",
-                                    lineNumber: 128,
-                                    columnNumber: 15
-                                }, this),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "absolute top-0 left-0 right-0 h-8 bg-zinc-200/80 dark:bg-zinc-800/70 flex items-center px-3 gap-1.5",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-2 h-2 rounded-full bg-zinc-400/50 dark:bg-white/20"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ProjectsShowcase.tsx",
-                                            lineNumber: 145,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-2 h-2 rounded-full bg-zinc-400/50 dark:bg-white/20"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ProjectsShowcase.tsx",
-                                            lineNumber: 146,
-                                            columnNumber: 15
-                                        }, this),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "w-2 h-2 rounded-full bg-zinc-400/50 dark:bg-white/20"
-                                        }, void 0, false, {
-                                            fileName: "[project]/components/ProjectsShowcase.tsx",
-                                            lineNumber: 147,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/components/ProjectsShowcase.tsx",
-                                    lineNumber: 144,
-                                    columnNumber: 13
-                                }, this)
-                            ]
-                        }, void 0, true, {
+                            className: "relative rounded-xl overflow-hidden bg-zinc-200/60 dark:bg-zinc-900/60 aspect-video",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                                src: active.videoSrc,
+                                className: "w-full h-full object-cover",
+                                preload: "metadata",
+                                playsInline: true,
+                                autoPlay: true,
+                                muted: true,
+                                loop: true
+                            }, active.videoSrc, false, {
+                                fileName: "[project]/components/ProjectsShowcase.tsx",
+                                lineNumber: 94,
+                                columnNumber: 13
+                            }, this)
+                        }, void 0, false, {
                             fileName: "[project]/components/ProjectsShowcase.tsx",
-                            lineNumber: 112,
+                            lineNumber: 93,
                             columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -215,7 +135,7 @@ function ProjectsShowcase() {
                                     children: active.name
                                 }, void 0, false, {
                                     fileName: "[project]/components/ProjectsShowcase.tsx",
-                                    lineNumber: 153,
+                                    lineNumber: 108,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -223,7 +143,7 @@ function ProjectsShowcase() {
                                     children: active.description
                                 }, void 0, false, {
                                     fileName: "[project]/components/ProjectsShowcase.tsx",
-                                    lineNumber: 157,
+                                    lineNumber: 112,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -233,12 +153,12 @@ function ProjectsShowcase() {
                                             children: tag
                                         }, tag, false, {
                                             fileName: "[project]/components/ProjectsShowcase.tsx",
-                                            lineNumber: 164,
+                                            lineNumber: 119,
                                             columnNumber: 17
                                         }, this))
                                 }, void 0, false, {
                                     fileName: "[project]/components/ProjectsShowcase.tsx",
-                                    lineNumber: 162,
+                                    lineNumber: 117,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -261,19 +181,19 @@ function ProjectsShowcase() {
                                                         points: "5 3 19 12 5 21 5 3"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/ProjectsShowcase.tsx",
-                                                        lineNumber: 189,
+                                                        lineNumber: 144,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ProjectsShowcase.tsx",
-                                                    lineNumber: 179,
+                                                    lineNumber: 134,
                                                     columnNumber: 17
                                                 }, this),
                                                 "Demo"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ProjectsShowcase.tsx",
-                                            lineNumber: 175,
+                                            lineNumber: 130,
                                             columnNumber: 15
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
@@ -289,52 +209,52 @@ function ProjectsShowcase() {
                                                         d: "M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
                                                     }, void 0, false, {
                                                         fileName: "[project]/components/ProjectsShowcase.tsx",
-                                                        lineNumber: 203,
+                                                        lineNumber: 158,
                                                         columnNumber: 19
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/components/ProjectsShowcase.tsx",
-                                                    lineNumber: 197,
+                                                    lineNumber: 152,
                                                     columnNumber: 17
                                                 }, this),
                                                 "GitHub"
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/components/ProjectsShowcase.tsx",
-                                            lineNumber: 193,
+                                            lineNumber: 148,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/components/ProjectsShowcase.tsx",
-                                    lineNumber: 174,
+                                    lineNumber: 129,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/components/ProjectsShowcase.tsx",
-                            lineNumber: 152,
+                            lineNumber: 107,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/components/ProjectsShowcase.tsx",
-                    lineNumber: 110,
+                    lineNumber: 91,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/components/ProjectsShowcase.tsx",
-            lineNumber: 88,
+            lineNumber: 69,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/components/ProjectsShowcase.tsx",
-        lineNumber: 86,
+        lineNumber: 67,
         columnNumber: 5
     }, this);
 }
-_s(ProjectsShowcase, "gnYi4drFlvClBNwFdbTR0AfqcMg=");
+_s(ProjectsShowcase, "K8mruSXNZNPY7sP9HW+tUIyfAEI=");
 _c = ProjectsShowcase;
 var _c;
 __turbopack_context__.k.register(_c, "ProjectsShowcase");
