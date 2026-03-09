@@ -16,25 +16,14 @@ export function Navbar() {
           AK
         </a>
 
-        {/* Right: nav links + divider + theme toggle */}
+        {/* Right: resume + divider + theme toggle */}
         <div className="flex items-center gap-6">
           <a
-            href="/projects"
-            className="text-[0.8rem] tracking-wide text-zinc-500 dark:text-white/55 hover:text-zinc-900 dark:hover:text-white/90 transition-colors duration-200"
+            href="/resumeSWE.pdf"
+            download
+            className="px-4 py-1.5 text-sm text-zinc-700 bg-zinc-100 border border-zinc-300 rounded-full hover:bg-zinc-200 hover:text-zinc-900 dark:text-white/90 dark:bg-white/8 dark:border-white/20 dark:hover:bg-white/[0.14] dark:hover:text-white transition-all duration-300 ease-out"
           >
-            Projects
-          </a>
-          <a
-            href="#"
-            className="text-[0.8rem] tracking-wide text-zinc-500 dark:text-white/55 hover:text-zinc-900 dark:hover:text-white/90 transition-colors duration-200"
-          >
-            Experience
-          </a>
-          <a
-            href="#contact"
-            className="text-[0.8rem] tracking-wide text-zinc-500 dark:text-white/55 hover:text-zinc-900 dark:hover:text-white/90 transition-colors duration-200"
-          >
-            Contact
+            résumé
           </a>
 
           <div className="w-px h-3.5 bg-zinc-300 dark:bg-white/15" />
