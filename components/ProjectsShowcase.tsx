@@ -19,7 +19,7 @@ const projects: Project[] = [
     description:
       "A high-performance AI orchestration platform built for scale. Leverages LangChain and OpenAI to automate complex enterprise workflows with zero-latency streaming.",
     tags: ["Langchain", "AWS", "OpenAI API"],
-    demoUrl: "#",
+    demoUrl: "https://hadi-ai.com",
     githubUrl: "#",
     videoSrc: "/videos/hadiDemo.mp4",
   },
@@ -29,18 +29,18 @@ const projects: Project[] = [
     description:
       "A real-time personal finance tracker with intelligent categorization and predictive spending insights powered by ML models.",
     tags: ["Tensorflow", "Pandas", "NumPy"],
-    demoUrl: "#",
-    githubUrl: "#",
-    videoSrc: "/videos/exoplanet-detector.mp4",
+    demoUrl: "https://exoplanet-detector-ten.vercel.app/",
+    githubUrl: "https://github.com/aKhalid1476/ExoplanetDetector/blob/main/ml_model/ExoplanetDetectorCNN%20(1).ipynb",
+    videoSrc: "/videos/cnn.mp4",
   },
   {
     id: "beaver-trails",
     name: "Beaver Trails",
     description:
       "End-to-end encrypted note-taking platform with zero-knowledge architecture. Your data stays yours — always.",
-    tags: ["Mapbox", "Eleven", "Auth0", "Web-XR"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["Mapbox", "Three.js", "Auth0", "Web-XR"],
+    demoUrl: "https://beavertrails.vercel.app/",
+    githubUrl: "https://github.com/JeffreyWongg/BeaverTrails",
     videoSrc: "/videos/beaver3.mp4",
   },
   {
@@ -50,8 +50,8 @@ const projects: Project[] = [
       "A distraction-free terminal emulator with a built-in AI copilot that explains commands, catches errors, and suggests optimizations.",
     tags: ["Pytorch", "Next.js", "React.js"],
     demoUrl: "#",
-    githubUrl: "#",
-    videoSrc: "/videos/zen-terminal.mp4",
+    githubUrl: "https://github.com/aKhalid1476/tensorrt-benchlab",
+    videoSrc: "",
   },
 ];
 
@@ -88,28 +88,34 @@ export function ProjectsShowcase() {
         </div>
 
         {/* Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start md:h-[260px]">
           {/* Video player */}
           <div className="relative rounded-xl overflow-hidden bg-zinc-200/60 dark:bg-zinc-900/60 aspect-video">
-            <video
-              key={active.videoSrc}
-              src={active.videoSrc}
-              className="w-full h-full object-cover"
-              preload="metadata"
-              playsInline
-              autoPlay
-              muted
-              loop
-            />
+            {active.videoSrc ? (
+              <video
+                key={active.videoSrc}
+                src={active.videoSrc}
+                className="w-full h-full object-cover"
+                preload="metadata"
+                playsInline
+                autoPlay
+                muted
+                loop
+              />
+            ) : (
+              <div className="w-full h-full flex items-center justify-center bg-black">
+                <span className="text-white text-3xl font-bold tracking-[0.2em] select-none">NVIDIA</span>
+              </div>
+            )}
           </div>
 
           {/* Project info */}
-          <div className="flex flex-col gap-5">
-            <h2 className="font-serif text-4xl md:text-5xl text-zinc-900 dark:text-white tracking-tight">
+          <div className="flex flex-col gap-5 overflow-hidden self-stretch">
+            <h2 className="font-serif text-4xl md:text-5xl text-zinc-900 dark:text-white tracking-tight leading-tight line-clamp-2">
               {active.name}
             </h2>
 
-            <p className="text-zinc-500 dark:text-white/65 text-[0.95rem] leading-relaxed">
+            <p className="text-zinc-500 dark:text-white/65 text-[0.95rem] leading-relaxed line-clamp-4">
               {active.description}
             </p>
 
@@ -125,42 +131,47 @@ export function ProjectsShowcase() {
               ))}
             </div>
 
-            {/* CTA buttons */}
-            <div className="flex items-center gap-3 pt-1">
+          </div>
+        </div>
+
+        {/* CTA buttons — centered below both columns */}
+        <div className="flex items-center justify-center gap-3 mt-8">
               <a
                 href={active.demoUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 text-sm font-medium hover:bg-zinc-700 dark:hover:bg-white/90 transition-colors duration-200"
               >
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <polygon points="5 3 19 12 5 21 5 3" />
-                </svg>
-                Demo
-              </a>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
+              <polygon points="5 3 19 12 5 21 5 3" />
+            </svg>
+            Demo
+          </a>
               <a
                 href={active.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-zinc-100 dark:bg-zinc-700/60 text-zinc-700 dark:text-white/80 text-sm font-medium border border-zinc-300 dark:border-white/10 hover:bg-zinc-200 dark:hover:bg-zinc-700/80 hover:text-zinc-900 dark:hover:text-white transition-colors duration-200"
               >
-                <svg
-                  width="14"
-                  height="14"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
-                </svg>
-                GitHub
-              </a>
-            </div>
-          </div>
+            <svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+            </svg>
+            GitHub
+          </a>
         </div>
       </div>
     </div>

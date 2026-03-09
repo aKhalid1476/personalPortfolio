@@ -12,7 +12,7 @@ export function Hero() {
       <div className="flex items-center gap-6 md:gap-8">
         {/* Avatar */}
         <motion.div
-          className="relative shrink-0"
+          className="relative shrink-0 w-28 h-28 md:w-[120px] md:h-[120px] rounded-full overflow-hidden"
           onHoverStart={() => setHovered(true)}
           onHoverEnd={() => setHovered(false)}
           whileHover={{ scale: 1.03 }}
@@ -21,9 +21,9 @@ export function Hero() {
           <Image
             src="/images/avatar.jpg"
             alt="Abdullah Khalid"
-            width={120}
-            height={120}
-            className="rounded-xl object-cover"
+            fill
+            sizes="(min-width: 768px) 120px, 112px"
+            className="object-cover object-[50%_18%]"
             priority
           />
         </motion.div>
