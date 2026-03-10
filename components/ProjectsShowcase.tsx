@@ -27,7 +27,7 @@ const projects: Project[] = [
     id: "exoplanet-detector",
     name: "Exoplanet Detector",
     description:
-      "A multi-layer CNN that detects exoplanets ",
+      "A multi-layer CNN that detects exoplanets from time-series data, and performs data augmentation using methods such as SMOTE.",
     tags: ["Tensorflow", "Pandas", "NumPy"],
     demoUrl: "https://exoplanet-detector-ten.vercel.app/",
     githubUrl: "https://github.com/aKhalid1476/ExoplanetDetector/blob/main/ml_model/ExoplanetDetectorCNN%20(1).ipynb",
@@ -37,7 +37,7 @@ const projects: Project[] = [
     id: "beaver-trails",
     name: "Beaver Trails",
     description:
-      "End-to-end encrypted note-taking platform with zero-knowledge architecture. Your data stays yours — always.",
+      "An immersive itinerary planner that takes your reel or tiktok of your dream location, and uses VR and AI generation to place you in that location.",
     tags: ["Mapbox", "Three.js", "Auth0", "Web-XR"],
     demoUrl: "https://beavertrails.vercel.app/",
     githubUrl: "https://github.com/JeffreyWongg/BeaverTrails",
@@ -47,7 +47,7 @@ const projects: Project[] = [
     id: "tensorrt-benchlab",
     name: "TensorRT Benchlab",
     description:
-      "A distraction-free terminal emulator with a built-in AI copilot that explains commands, catches errors, and suggests optimizations.",
+      "A distributed benchmarking platform that measures AI inference performance across CPU, CUDA, and TensorRT pipelines on NVIDIA GPUs.",
     tags: ["Pytorch", "Next.js", "React.js"],
     demoUrl: "#",
     githubUrl: "https://github.com/aKhalid1476/tensorrt-benchlab",

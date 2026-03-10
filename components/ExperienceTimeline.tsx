@@ -242,7 +242,7 @@ export function ExperienceTimeline() {
           style={{ fontFamily: '"Bodoni Moda","Bodoni 72","Didot",serif' }}
           className="text-4xl sm:text-5xl md:text-6xl tracking-tight text-zinc-900 dark:text-white"
         >
-          Professional <em>Journey</em>
+          My <em>Experience</em>
         </h1>
         <p className="mt-4 text-sm text-zinc-500 dark:text-white/40 tracking-wide">
           A curated timeline of roles, teams, and problems.
