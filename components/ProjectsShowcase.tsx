@@ -65,15 +65,21 @@ export function ProjectsShowcase() {
 
   return (
     <div className="w-full max-w-4xl mx-auto">
+      <h1
+        style={{ fontFamily: '"Bodoni Moda","Bodoni 72","Didot",serif' }}
+        className="text-5xl md:text-6xl tracking-tight text-zinc-900 dark:text-white text-center mb-8"
+      >
+        Projects
+      </h1>
       {/* Card container */}
-      <div className="rounded-2xl bg-white/70 dark:bg-zinc-800/40 backdrop-blur-sm border border-zinc-200/70 dark:border-white/6 p-8 shadow-[0_8px_48px_rgba(0,0,0,0.08)] dark:shadow-[0_8px_48px_rgba(0,0,0,0.4)]">
+      <div className="rounded-2xl bg-white/70 dark:bg-zinc-800/40 backdrop-blur-sm border border-zinc-200/70 dark:border-white/6 p-4 sm:p-6 md:p-8 shadow-[0_8px_48px_rgba(0,0,0,0.08)] dark:shadow-[0_8px_48px_rgba(0,0,0,0.4)]">
         {/* Tab bar */}
-        <div className="flex items-center gap-8 mb-8 border-b border-zinc-200/70 dark:border-white/6 pb-0">
+        <div className="flex items-center gap-4 sm:gap-8 mb-6 sm:mb-8 border-b border-zinc-200/70 dark:border-white/6 pb-0 overflow-x-auto whitespace-nowrap">
           {projects.map((project) => (
             <button
               key={project.id}
               onClick={() => handleTabChange(project.id)}
-              className={`relative pb-4 text-sm tracking-wide transition-colors duration-200 ${
+              className={`relative pb-4 text-xs sm:text-sm tracking-wide transition-colors duration-200 shrink-0 ${
                 activeId === project.id
                   ? "text-zinc-900 dark:text-white"
                   : "text-zinc-400 dark:text-white/40 hover:text-zinc-600 dark:hover:text-white/70"
@@ -88,7 +94,7 @@ export function ProjectsShowcase() {
         </div>
 
         {/* Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start md:h-[260px]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-5 sm:gap-8 items-start md:h-[260px]">
           {/* Video player */}
           <div className="relative rounded-xl overflow-hidden bg-zinc-200/60 dark:bg-zinc-900/60 aspect-video">
             {active.videoSrc ? (
@@ -111,7 +117,7 @@ export function ProjectsShowcase() {
 
           {/* Project info */}
           <div className="flex flex-col gap-5 overflow-hidden self-stretch">
-            <h2 className="font-serif text-4xl md:text-5xl text-zinc-900 dark:text-white tracking-tight leading-tight line-clamp-2">
+            <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-zinc-900 dark:text-white tracking-tight leading-tight line-clamp-2">
               {active.name}
             </h2>
 
@@ -135,12 +141,12 @@ export function ProjectsShowcase() {
         </div>
 
         {/* CTA buttons — centered below both columns */}
-        <div className="flex items-center justify-center gap-3 mt-8">
+        <div className="flex items-center justify-center flex-wrap gap-3 mt-6 sm:mt-8">
               <a
                 href={active.demoUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 text-sm font-medium hover:bg-zinc-700 dark:hover:bg-white/90 transition-colors duration-200"
+                className="flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-lg bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 text-sm font-medium hover:bg-zinc-700 dark:hover:bg-white/90 transition-colors duration-200"
               >
             <svg
               width="14"
@@ -160,7 +166,7 @@ export function ProjectsShowcase() {
                 href={active.githubUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-zinc-100 dark:bg-zinc-700/60 text-zinc-700 dark:text-white/80 text-sm font-medium border border-zinc-300 dark:border-white/10 hover:bg-zinc-200 dark:hover:bg-zinc-700/80 hover:text-zinc-900 dark:hover:text-white transition-colors duration-200"
+                className="flex items-center gap-2 px-4 sm:px-5 py-2.5 rounded-lg bg-zinc-100 dark:bg-zinc-700/60 text-zinc-700 dark:text-white/80 text-sm font-medium border border-zinc-300 dark:border-white/10 hover:bg-zinc-200 dark:hover:bg-zinc-700/80 hover:text-zinc-900 dark:hover:text-white transition-colors duration-200"
               >
             <svg
               width="14"

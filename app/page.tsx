@@ -62,12 +62,13 @@ const CONTACT_LINKS = [
 ];
 
 const arrowButtonClass =
-  "fixed top-1/2 -translate-y-1/2 z-30 w-11 h-11 rounded-full flex items-center justify-center border border-zinc-300 text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 dark:border-white/20 dark:text-white/60 dark:hover:bg-white/10 dark:hover:text-white transition-all duration-300 ease-out";
+  "fixed top-1/2 -translate-y-1/2 z-30 w-11 h-11 rounded-full items-center justify-center border border-zinc-300 text-zinc-500 hover:bg-zinc-100 hover:text-zinc-900 dark:border-white/20 dark:text-white/60 dark:hover:bg-white/10 dark:hover:text-white transition-all duration-300 ease-out hidden md:flex";
 
 export default function Home() {
   const [current, setCurrent] = useState(0);
   const [direction, setDirection] = useState(1);
   const expScrollRef = useRef<HTMLDivElement>(null);
+  const touchStartX = useRef<number>(0);
 
   function goTo(index: number) {
     setDirection(index > current ? 1 : -1);
@@ -96,7 +97,15 @@ export default function Home() {
   }, [current]);
 
   return (
-    <main className="relative z-10 [overflow:clip]">
+    <main
+      className="relative z-10 [overflow:clip]"
+      onTouchStart={(e) => { touchStartX.current = e.touches[0].clientX; }}
+      onTouchEnd={(e) => {
+        const dx = e.changedTouches[0].clientX - touchStartX.current;
+        if (dx < -50 && current < SECTION_COUNT - 1) goTo(current + 1);
+        if (dx > 50 && current > 0) goTo(current - 1);
+      }}
+    >
       {/* Left arrow */}
       <AnimatePresence>
         {current > 0 && (
@@ -138,7 +147,7 @@ export default function Home() {
       </AnimatePresence>
 
       {/* Progress dots */}
-      <div className="fixed bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-2 px-4 py-2.5 rounded-full bg-black/50 dark:bg-black/60 backdrop-blur-md border border-white/[0.08]">
+      <div className="fixed bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 z-30 flex gap-2 px-3 sm:px-4 py-2 sm:py-2.5 rounded-full bg-black/50 dark:bg-black/60 backdrop-blur-md border border-white/[0.08]">
         {Array.from({ length: SECTION_COUNT }).map((_, i) => (
           <button
             key={i}
@@ -167,7 +176,7 @@ export default function Home() {
         >
           {current === 2 ? (
             /* Experience — full-height flex column so flex-1 child fills exactly the right space */
-            <div className="h-screen flex flex-col pt-20 pb-16">
+            <div className="h-screen flex flex-col pt-16 sm:pt-20 pb-14 sm:pb-16">
               <div
                 ref={expScrollRef}
                 className="flex-1 min-h-0 overflow-y-auto [&::-webkit-scrollbar]:hidden [scrollbar-width:none] [-ms-overflow-style:none]"
@@ -178,8 +187,8 @@ export default function Home() {
               </div>
             </div>
           ) : (
-            <div className="min-h-screen flex items-center w-full">
-              <div className="max-w-4xl mx-auto px-6 w-full">
+            <div className="min-h-screen flex items-start md:items-center w-full pt-24 sm:pt-28 md:pt-0 pb-20 sm:pb-24 md:pb-0">
+              <div className="max-w-4xl mx-auto px-4 sm:px-6 w-full">
 
                 {/* 0 — Hero */}
                 {current === 0 && <Hero />}
@@ -214,10 +223,10 @@ export default function Home() {
 
                 {/* 4 — Contact */}
                 {current === 4 && (
-                  <div className="w-full max-w-2xl">
+                  <div className="w-full max-w-2xl mx-auto">
                     <h2
                       style={{ fontFamily: '"Bodoni Moda","Bodoni 72","Didot",serif' }}
-                      className="text-5xl md:text-6xl tracking-tight text-zinc-900 dark:text-white mb-12"
+                      className="text-4xl sm:text-5xl md:text-6xl tracking-tight text-zinc-900 dark:text-white mb-8 md:mb-12 text-center md:text-left"
                     >
                       Let&apos;s connect.
                     </h2>
@@ -235,7 +244,7 @@ export default function Home() {
                           </span>
                           <div className="flex-1">
                             <div className="text-zinc-900 dark:text-white font-medium">{label}</div>
-                            <div className="text-zinc-500 dark:text-white/50 text-sm">{handle}</div>
+                            <div className="text-zinc-500 dark:text-white/50 text-sm break-all">{handle}</div>
                           </div>
                           <svg
                             className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 text-zinc-500 dark:text-white/60"
@@ -261,6 +270,38 @@ export default function Home() {
             </div>
           )}
         </motion.div>
+      </AnimatePresence>
+      {/* Swipe hint — mobile only, hero section only */}
+      <AnimatePresence>
+        {current === 0 && (
+          <motion.div
+            key="swipe-hint"
+            className="fixed bottom-16 sm:bottom-20 left-1/2 -translate-x-1/2 z-30 md:hidden flex items-center gap-2 pointer-events-none rounded-full px-3.5 py-2 border border-zinc-300/70 dark:border-white/20 bg-white/85 dark:bg-zinc-900/70 backdrop-blur-sm shadow-[0_8px_24px_rgba(0,0,0,0.16)]"
+            initial={{ opacity: 0, y: 8, scale: 0.98 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            exit={{ opacity: 0, y: 4 }}
+            transition={{ duration: 0.6, delay: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+          >
+            <span className="text-[11px] tracking-[0.12em] uppercase font-mono text-zinc-700 dark:text-white/80">
+              swipe for more
+            </span>
+            <motion.svg
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-zinc-700 dark:text-white/80"
+              animate={{ x: [0, 6, 0], opacity: [1, 0.65, 1] }}
+              transition={{ duration: 1.0, repeat: Infinity, repeatDelay: 1.8, ease: "easeInOut", delay: 1.2 }}
+            >
+              <path d="M9 18l6-6-6-6" />
+            </motion.svg>
+          </motion.div>
+        )}
       </AnimatePresence>
     </main>
   );

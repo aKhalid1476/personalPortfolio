@@ -9,28 +9,28 @@ const EXPERIENCES = [
     role: "Technical Co-Founder",
     company: "Hadi AI",
     period: "Jan 2026 — Present",
-    description: "RAG Flashcard generations.",
+    description: "Agentic RAG and ML for Education",
     projectDescription:
-      "Built an AI study assistant that turns source material into adaptive flashcards using retrieval-augmented generation. Shipped document ingestion, vector search pipelines, and a React front end for reviewing generated decks with user feedback loops.",
-    tech: ["Python", "React", "AWS"],
+      "Hadi AI is a platform that uses AI to revolutionize Islamic learning. The first step of this project was to build a RAG system using Langchain, HuggingFace, and OpenAI API,that generated flashcards among textbooks of the major science of Islam (Fiqh, Tafsir, Hadith, Seerah, etc.). Right now a Qur'an recitation corrector is being built, by training an ML model on hours of Qur'an recitations.",
+    tech: ["AWS", "Langchain", "OpenAI"],
   },
   {
     role: "Full Stack Developer",
-    company: "Placeholder Studio",
-    period: "JAN 2023 — APR 2023",
-    description: "Placeholder description of role and impact.",
+    company: "Orbital",
+    period: "Sep 2025 - Present",
+    description: "Telemetry Dashboard Development.",
     projectDescription:
-      "Implemented full-stack product features across API, database, and frontend layers. Focused on reducing latency in key user flows and improving reliability through stronger validation, observability, and deployment automation.",
-    tech: ["Next.js", "Node.js", "PostgreSQL"],
+      "The Orbital Design team at the University of Waterloo is working to get a satellite into orbit. My job was to develop an end-to-end application which allows users to send messages to the satellite, and record the satellite's messages back to the ground station. I developed FastAPI microservices, automated payload creation/deletion, reduced system latency, and used OAuth2 for user verification.",
+    tech: ["React.js", "Node.js", "PostgreSQL"],
   },
   {
-    role: "Co-founder & Developer",
-    company: "Startup Name",
-    period: "2022 — 2023",
-    description: "Placeholder description of role and impact.",
+    role: "ML Engineer",
+    company: "Inspirit AI",
+    period: "May 2025 - Aug 2025",
+    description: "Built deep learning models for cancer patients.",
     projectDescription:
-      "Led product development from prototype to early user testing. Designed the core architecture, integrated cloud services, and iterated quickly on user feedback to validate product-market fit.",
-    tech: ["TypeScript", "Python", "GCP"],
+      "I architected a cancerous cell detector is a deep learning model that detects cancerous cells in medical images. It uses a convolutional neural network to identify cancerous cells in medical images. This model was used to postively identify over 50 patients with early stage cancerous cells. This was work done for Inspirit AI, and there codebase is not public.",
+    tech: ["Tensorflow", "Pandas", "Numpy"],
   },
 ] as const;
 
@@ -88,7 +88,7 @@ function ExperienceCard({
   return (
     <div
       ref={cardRef}
-      className="relative rounded-2xl border border-zinc-200/70 dark:border-white/[0.08] bg-white/60 dark:bg-zinc-800/50 backdrop-blur-sm p-6 hover:-translate-y-1 transition-all duration-300 ease-out cursor-pointer"
+      className="relative rounded-2xl border border-zinc-200/70 dark:border-white/[0.08] bg-white/60 dark:bg-zinc-800/50 backdrop-blur-sm p-4 sm:p-6 hover:-translate-y-1 transition-all duration-300 ease-out cursor-pointer"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
       onClick={onClick}
@@ -142,6 +142,9 @@ function ExperienceCard({
           <TechTag key={t} label={t} />
         ))}
       </div>
+      <p className="mt-4 text-[11px] tracking-[0.08em] uppercase font-mono text-zinc-500 dark:text-white/45">
+        Click to learn more
+      </p>
     </div>
   );
 }
@@ -168,7 +171,7 @@ function ExperienceModal({
     <AnimatePresence>
       {experience && (
         <motion.div
-          className="fixed inset-0 z-50 flex items-center justify-center p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
@@ -185,7 +188,7 @@ function ExperienceModal({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 12, scale: 0.98 }}
             transition={{ duration: 0.2, ease: "easeOut" }}
-            className="relative w-full max-w-xl rounded-2xl border border-zinc-200/70 dark:border-white/[0.12] bg-white dark:bg-zinc-900 p-6 md:p-7 shadow-2xl"
+            className="relative w-full max-w-xl max-h-[85vh] overflow-y-auto rounded-2xl border border-zinc-200/70 dark:border-white/[0.12] bg-white dark:bg-zinc-900 p-5 sm:p-6 md:p-7 shadow-2xl"
           >
             <button
               type="button"
@@ -201,7 +204,7 @@ function ExperienceModal({
             </p>
             <h3
               style={{ fontFamily: '"Bodoni Moda","Bodoni 72","Didot",serif' }}
-              className="mt-2 text-3xl tracking-tight text-zinc-900 dark:text-white"
+              className="mt-2 text-2xl sm:text-3xl tracking-tight text-zinc-900 dark:text-white"
             >
               {experience.role}
             </h3>
@@ -233,11 +236,11 @@ export function ExperienceTimeline() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.45, ease: [0.25, 0.1, 0.25, 1] }}
-        className="mb-16 text-center pt-12"
+        className="mb-10 sm:mb-16 text-center pt-8 sm:pt-12"
       >
         <h1
           style={{ fontFamily: '"Bodoni Moda","Bodoni 72","Didot",serif' }}
-          className="text-5xl md:text-6xl tracking-tight text-zinc-900 dark:text-white"
+          className="text-4xl sm:text-5xl md:text-6xl tracking-tight text-zinc-900 dark:text-white"
         >
           Professional <em>Journey</em>
         </h1>
@@ -251,7 +254,7 @@ export function ExperienceTimeline() {
         {/* Center spine — desktop only */}
         <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-zinc-200/50 dark:bg-white/[0.06]" />
 
-        <div className="flex flex-col gap-20">
+        <div className="flex flex-col gap-12 sm:gap-20">
           {EXPERIENCES.map((exp, i) => {
             const isLeft = i % 2 === 0; // even → date left, card right
             return (
