@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 
 interface Project {
   id: string;
@@ -17,7 +17,7 @@ const projects: Project[] = [
     id: "hadi-ai",
     name: "Hadi AI",
     description:
-      "A high-performance AI orchestration platform built for scale. Leverages LangChain and OpenAI to automate complex enterprise workflows with zero-latency streaming.",
+      "An Islamic learning patform that leverages RAG, Agentic AI, and ML to generate flashcards, provide and allocate study times according to the Sunnah, and Qur'an recitation correction",
     tags: ["Langchain", "AWS", "OpenAI API"],
     demoUrl: "https://hadi-ai.com",
     githubUrl: "#",
@@ -27,7 +27,7 @@ const projects: Project[] = [
     id: "exoplanet-detector",
     name: "Exoplanet Detector",
     description:
-      "A real-time personal finance tracker with intelligent categorization and predictive spending insights powered by ML models.",
+      "A multi-layer CNN that detects exoplanets ",
     tags: ["Tensorflow", "Pandas", "NumPy"],
     demoUrl: "https://exoplanet-detector-ten.vercel.app/",
     githubUrl: "https://github.com/aKhalid1476/ExoplanetDetector/blob/main/ml_model/ExoplanetDetectorCNN%20(1).ipynb",
@@ -58,6 +58,11 @@ const projects: Project[] = [
 export function ProjectsShowcase() {
   const [activeId, setActiveId] = useState(projects[0].id);
   const active = projects.find((p) => p.id === activeId)!;
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    videoRef.current?.play().catch(() => {});
+  }, [active.videoSrc]);
 
   function handleTabChange(id: string) {
     setActiveId(id);
@@ -99,10 +104,11 @@ export function ProjectsShowcase() {
           <div className="relative rounded-xl overflow-hidden bg-zinc-200/60 dark:bg-zinc-900/60 aspect-video">
             {active.videoSrc ? (
               <video
+                ref={videoRef}
                 key={active.videoSrc}
                 src={active.videoSrc}
                 className="w-full h-full object-cover"
-                preload="metadata"
+                preload="auto"
                 playsInline
                 autoPlay
                 muted
