@@ -15,9 +15,18 @@ const EXPERIENCES = [
     tech: ["AWS", "Langchain", "OpenAI"],
   },
   {
+    role: "Autonomous Software Developer",
+    company: "WARG",
+    period: "Jan 2026 - Present",
+    description: "Autonomous Drone Development.",
+    projectDescription:
+      "Developing UAV autonomy systems using YOLOv8-based object detection, implementing real-time computer vision pipelines for target tracking, spatial coordinate estimation, and onboard sensor integration.",
+    tech: ["PyMAVLINK", "Python", "OpenCV"],
+  },
+  {
     role: "Full Stack Developer",
     company: "Orbital",
-    period: "Sep 2025 - Present",
+    period: "Sep 2025 - Jan 2026",
     description: "Telemetry Dashboard Development.",
     projectDescription:
       "The Orbital Design team at the University of Waterloo is working to get a satellite into orbit. My job was to develop an end-to-end application which allows users to send messages to the satellite, and record the satellite's messages back to the ground station. I developed FastAPI microservices, automated payload creation/deletion, reduced system latency, and used OAuth2 for user verification.",
