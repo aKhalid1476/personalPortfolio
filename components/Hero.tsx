@@ -65,7 +65,7 @@ export function Hero() {
           <motion.div className="flex items-center justify-center md:justify-start flex-wrap gap-2 sm:gap-3 mt-1 md:mt-2" variants={itemVariants}>
             {/* Resume download button */}
             <a
-              href="/resumeSWE.pdf"
+              href="/Resume.pdf"
               download
               className="px-4 py-1.5 text-sm text-zinc-700 bg-zinc-100 border border-zinc-300 rounded-full hover:bg-zinc-200 hover:text-zinc-900 dark:text-white/90 dark:bg-white/8 dark:border-white/20 dark:hover:bg-white/[0.14] dark:hover:text-white transition-all duration-300 ease-out"
             >

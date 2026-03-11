@@ -19,7 +19,7 @@ export function Navbar() {
         {/* Right: resume + divider + theme toggle */}
         <div className="flex items-center gap-3 sm:gap-6">
           <a
-            href="/resumeSWE.pdf"
+            href="/Resume.pdf"
             download
             className="px-3 sm:px-4 py-1.5 text-xs sm:text-sm text-zinc-700 bg-zinc-100 border border-zinc-300 rounded-full hover:bg-zinc-200 hover:text-zinc-900 dark:text-white/90 dark:bg-white/8 dark:border-white/20 dark:hover:bg-white/[0.14] dark:hover:text-white transition-all duration-300 ease-out"
           >
